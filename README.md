@@ -1,12 +1,24 @@
-# so101-act-grasping
+# SO-ARM101 · ACT Grasping
+
+![SO-ARM101 · ACT Grasping 项目封面](.github/readme/cover.svg)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-516d64)](LICENSE)
+![ACT](https://img.shields.io/badge/ACT-project-516d64)
+[![Portfolio](https://img.shields.io/badge/oye-portfolio-516d64)](https://oye-li-bc.github.io/)
 
 基于 ACT (Action Chunking Transformer) 的机械臂抓取-放置系统，运行在 SO-ARM101 六自由度机械臂上，使用 LeRobot 框架完成从数据采集到真机部署的完整模仿学习闭环。
+
+**[演示效果](#demo) · [实验记录](#results) · [快速复现](#quickstart) · [技术文档](#docs)**
+
+<a id="demo"></a>
 
 ## 🎥 演示效果
 
 ![demo](assets/demo.gif)
 
 > 演示：SO-ARM101 从臂抓取纸巾团并放置到目标位置（手机实拍，0-10s）
+
+<a id="results"></a>
 
 ## 📊 成果概览
 
@@ -37,6 +49,8 @@ so101-act-grasping/
 ├── data/          # 数据集说明（权重和数据集托管在 HuggingFace）
 └── assets/        # README 配图
 ```
+
+<a id="quickstart"></a>
 
 ## 🚀 快速复现
 
@@ -95,6 +109,8 @@ PYTHONPATH="" lerobot-rollout \
 - **fourcc MJPG**：1080p 下必须用 MJPG 压缩格式，否则回退 YUYV 仅 5 FPS
 - **n_action_steps**：50（2 秒/块），实验证明衔接平滑度收益 > 矫正频率收益
 
+<a id="docs"></a>
+
 ## 📚 文档索引
 
 - [docs/01-项目概述.md](docs/01-项目概述.md)
@@ -117,3 +133,12 @@ PYTHONPATH="" lerobot-rollout \
 ## 📄 License
 
 MIT
+
+## 同系列项目
+
+- [SO-ARM101 · SmolVLA Grasping](https://github.com/oye-Li-bc/so101-smolvla-grasping)
+- [SO-ARM101 · HIL-SERL Pushing](https://github.com/oye-Li-bc/so101-hilserl-pushing)
+
+---
+
+[个人作品集](https://oye-li-bc.github.io/) · [可编辑封面与配图说明](.github/readme/README.md)
